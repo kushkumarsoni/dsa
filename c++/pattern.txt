@@ -1,0 +1,910 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+void checkCharacter(char c) {
+    if (c >= 'a' && c <= 'z') {
+        cout << c << " is a lowercase letter." << endl;
+    } else if (c >= 'A' && c <= 'Z') {
+        cout << c << " is an uppercase letter." << endl;
+    } else if (c >= '0' && c <= '9') {
+        cout << c << " is a numeric digit." << endl;
+    } else {
+        std::cout << c << " is neither a lowercase letter, an uppercase letter, nor a numeric digit." << std::endl;
+    }
+}
+
+int main() {
+// //   int a,b;
+//     double a,b;
+    
+//   cout << "Enter the value of a :";
+//   cin >> a;
+//   cout << "Enter the value of b :";
+//   cin >> b;
+//   if(a>b) {
+//       cout << "A is greater";
+//   }else{
+//       cout << "B is greater";
+//   }
+
+//   int a;
+//   cout << "Enter a number : ";
+//   cin >> a;
+  
+//   if(a > 0) {
+//       cout << "Number is +ve";
+//   }else if(a < 0) {
+//     cout << "Number is -ve";
+//   } else{
+//       cout << "Number is 0 " << endl;
+//   }
+// int a = 9;
+// if(a==9) {
+//     cout << "Nine" << endl;
+// }
+
+// if(a>0) {
+//     cout << "Number is +ve";
+// }else{
+//       cout << "Number is -ve";
+// }
+
+// int a = 2;
+// int b = a+1;
+// if((a=3) == b) {
+//     cout << "Value of first " << a <<endl;
+// }else{
+//     cout << "Value of a plus one "  << a+1 <<endl;
+// }
+
+// int a =24;
+// if(a > 20) {
+//     cout << "Love";
+// }else if(a==24) {
+//     cout << "Lovely";
+// }else{
+//     cout << "Tets";
+// }
+
+// char ch;
+// cout << "Enter a signle character : " << endl;
+// cin >> ch;
+
+
+// char inputChar;
+
+//     cout << "Enter a single character: ";
+//     cin >> inputChar;
+
+//     checkCharacter(inputChar);
+
+//     return 0;
+
+    // string firstName,lastName;
+
+    // std::cout << "Enter your first name: ";
+    // getline(cin, firstName);
+    
+    //  std::cout << "Enter your last name: ";
+    // getline(cin, lastName);
+
+    // cout << "Your full name is: " << firstName << " " <<lastName << endl;
+
+    // return 0;
+    
+    // long long value = 12345678901234569080LL;
+
+    // std::cout << "Stored value: " << value << std::endl;
+    
+    int n;
+    cout << "Enter a number : " << endl;
+    cin >> n;
+    
+    // int i =1;
+    // while(i <= n) {
+    //     int j = 1;
+    //     while(j <= n) {
+    //         cout << j;
+    //         //cout << n-j+1;
+    //         j++;
+    //     }
+    //     cout << endl;
+    //     i++;
+    // }
+
+//  int i =1;
+//  int count  = 1;
+//     while(i <= n) {
+//         int j = 1;
+//         while(j <= n) {
+//             cout << count << " ";
+//             //cout << n-j+1;
+//             j++;
+//             count++;
+//         }
+//         cout << endl;
+//         i++;
+//     }
+
+//  int i =1;
+//  int count = 1;
+//     while(i <= n) {
+//         int j = 1;
+//         while(j <= i) {
+//             // cout << count << " ";
+//             // count++;
+//             //cout << i;
+//             // cout << "*";
+//             //cout << n-j+1;
+//             j++;
+//         }
+//         cout << endl;
+//         i++;
+//     }
+
+ int i = 1;
+    while(i <= n) {
+        int j = 1;
+        // int val = i;
+        while(j <= i) {
+            cout << i-j+1 << " "; 
+            // cout << val << " ";
+            // val++;
+            j++;
+        }
+        cout << endl;
+        i++;
+    }
+    return 0;
+}
+
+
+
+alphabet
+--------------------------------------
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+ int n;
+ cout << "Enter a number : " <<endl;
+ cin >> n;
+ 
+ int row = 1;
+ while(row <= n) {
+    int col = 1;
+     while(col <= n) {
+        char ch = 'A'+ row -1;
+        cout << ch << " ";
+        col++;
+     }
+     cout << endl;
+     row++;
+ }
+ 
+ return 0;
+ 
+}
+
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+ int n;
+ cout << "Enter a number : " <<endl;
+ cin >> n;
+ 
+ int row = 1;
+ char ch = 'A';
+ while(row <= n) {
+    int col = 1;
+     while(col <= n) {
+         //char ch = 'A'+ count - 1;
+        //char ch = 'A'+ row -1;
+        cout << ch << " ";
+        ch = ch+1;
+        col++;
+     }
+     cout << endl;
+     row++;
+ }
+ 
+ return 0;
+ 
+}
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+ int n;
+ cout << "Enter a number : " <<endl;
+ cin >> n;
+ 
+ int row = 1;
+//  char ch = 'A';
+ while(row <= n) {
+    int col = 1;
+     while(col <= n) {
+         //char ch = 'A'+ count - 1;
+        //char ch = 'A'+ row -1;
+        char ch =  'A' + row + col -2;
+        cout << ch << " ";
+        ch = ch+1;
+        col++;
+     }
+     cout << endl;
+     row++;
+ }
+ 
+ return 0;
+ 
+}
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+ int n;
+ cout << "Enter a number : " <<endl;
+ cin >> n;
+ 
+ int row = 1;
+  char ch = 'A';
+ while(row <= n) {
+    int col = 1;
+    //  char ch = 'A';
+    //  char ch = 'A'+row-1;
+     while(col <= row) {
+         //char ch = 'A'+row-1;
+         //char ch = 'A'+ count - 1;
+        //char ch = 'A'+ row -1;
+       // char ch =  'A' + row + col -2;
+        cout << ch << " ";
+        ch = ch+1;
+        col++;
+     }
+     cout << endl;
+     row++;
+ }
+ 
+ return 0;
+ 
+}
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+ int n;
+ cout << "Enter a number : " <<endl;
+ cin >> n;
+ 
+ int row = 1;
+  //char ch = 'A';
+ while(row <= n) {
+    int col = 1;
+    //  char ch = 'A';
+    //  char ch = 'A'+row-1;
+     while(col <= row) {
+         //char ch = 'A'+row-1;
+         //char ch = 'A'+ count - 1;
+        //char ch = 'A'+ row -1;
+        char ch =  'A' + row + col -2;
+        cout << ch << " ";
+        ch = ch+1;
+        col++;
+     }
+     cout << endl;
+     row++;
+ }
+ 
+ return 0;
+ 
+}
+
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+ int n;
+ cout << "Enter a number : " <<endl;
+ cin >> n;
+ 
+ int row = 1;
+ while(row <= n) {
+    int col = 1;
+      char ch =  'A' + n-row;
+     while(col <= row) {
+        cout << ch << " ";
+        ch = ch+1;
+        col++;
+     }
+     cout << endl;
+     row++;
+ }
+ 
+ return 0;
+ 
+}
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+ int n;
+ cout << "Enter a number : " <<endl;
+ cin >> n;
+ 
+ int row = 1;
+ while(row <= n) {
+     int space = n-row;
+     while(space) {
+         cout << " ";
+         space = space-1;
+     }
+    int col = 1;
+     while(col <= row) {
+        cout << "*";
+        col++;
+     }
+     cout << endl;
+     row++;
+ }
+ 
+ return 0;
+ 
+}
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+ int n;
+ cout << "Enter a number : " <<endl;
+ cin >> n;
+ 
+ int row = 1;
+ while(row <= n) {
+    int col = 1;
+    while(col <= (n-row+1)) {
+        cout << "*";
+        col++;
+     }
+    cout << endl;
+    row++;
+ }
+ 
+ return 0;
+ 
+}
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+ int n;
+ cout << "Enter a number : " <<endl;
+ cin >> n;
+ 
+ int row = 1;
+ while(row <= n) {
+    int col = 1;
+    int space = n+row-1;
+    while(space) {
+        cout << " ";
+        space--;
+    }
+    while(col <= (n-row+1)) {
+        cout << "*";
+        col++;
+     }
+    cout << endl;
+    row++;
+ }
+ 
+ return 0;
+ 
+}
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+ int n;
+ cout << "Enter a number : " <<endl;
+ cin >> n;
+ 
+ int row = 1;
+ while(row <= n) {
+     
+     //space print
+    int space = n-row;
+    while(space) {
+        cout << " ";
+       space = space-1;
+    }
+    
+    //1st tringle
+    int col = 1;
+    while(col <= row) {
+        cout << col;
+        col++;
+     }
+     
+     //2nd tringle
+     int start = row-1;
+     while(start) {
+         cout << start;
+         start = start-1;
+     }
+    cout << endl;
+    row++;
+ }
+ 
+ return 0;
+ 
+}
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int n;
+    cout << "Enter a number" <<endl;
+    cin >> n;
+    
+    int row = 1;
+    
+    while(row <= n) {
+        int col = 1;
+        int space = n-row;
+        
+        while(space){
+            cout << " ";
+            space--;
+        }
+        
+        while(col <= row) {
+            cout << row;
+            col++;
+        } 
+        cout << endl;
+        row++;
+    }
+    
+    return 0;
+}
+
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int n;
+    cout << "Enter a number" << endl;
+    cin >> n;
+    cout << endl;
+    
+    int row = 1;
+    
+    while(row <= n) {
+        int col = 1;
+        int space = row-col;
+        
+        while(space){
+            cout << " ";
+            space--;
+        }
+        
+        while(col <= ( n-row+1)) {
+            cout << row;
+            col++;
+        } 
+    
+        cout << endl;
+        row++;
+    }
+    
+    return 0;
+}
+
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int n;
+    cout << "Enter a number" << endl;
+    cin >> n;
+    cout << endl;
+    
+    int row = 1;
+    int count = 1;
+    while(row <= n) {
+        int col = 1;
+    
+        int space = n-row;
+        while(space){
+            cout << " ";
+            space--;
+        }
+
+           while(col <= row) {
+            cout << count ;
+            col = col+1;
+            count = count+1;
+        } 
+    
+        cout << endl;
+        row = row+1;
+    }
+    
+    return 0;
+}
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int n;
+    cout << "Enter a number" << endl;
+    cin >> n;
+    cout << endl;
+    
+    int row = 1;
+    while(row <= n) {
+        int col = 1;
+    
+        int space = row-col;
+    
+        while(space){
+            cout << " ";
+            space--;
+        }
+        
+        while(col <= ( n-row+1)) {
+            cout << row+col-1;
+            col++;
+        } 
+    
+    
+        cout << endl;
+        row = row+1;
+    }
+    
+    return 0;
+}
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int n;
+    cout << "Enter a number" << endl;
+    cin >> n;
+    cout << endl;
+    
+    int row = 1;
+    while(row <= n) {
+        int col = 1;
+    
+        int space = row-col;
+    
+        while(space){
+            cout << " ";
+            space--;
+        }
+        
+        while(col <= ( n-row+1)) {
+           cout << col;
+            col++;
+        } 
+    
+        cout << endl;
+        row = row+1;
+    }
+    
+    return 0;
+}
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int n;
+    cout << "Enter a number" << endl;
+    cin >> n;
+    cout << endl;
+    
+    int row = 1;
+    while(row <= n) {
+        int col = 1;
+        int space = row-col;
+      
+        while(col <= ( n-row+1)) {
+            //cout << row+col-1;
+            cout << col;
+            col++;
+        } 
+    
+        while(space){
+            cout << " ";
+            space--;
+        }
+        
+        cout << endl;
+        row = row+1;
+    }
+    
+    return 0;
+}
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int n;
+    cout << "Enter a number" << endl;
+    cin >> n;
+    cout << endl;
+    
+    int row = 1;
+    while(row <= n) {
+        int col = 1;
+        int space = row-col;
+      
+        while(col <= ( n-row+1)) {
+            //cout << row+col-1;
+            cout << col;
+            col++;
+        } 
+    
+        while(space){
+            cout << " ";
+            space--;
+        }
+        
+        cout << endl;
+        row = row+1;
+    }
+    
+    int row2 = 1;
+    while(row2 <= n) {
+        int col2 = 1;
+        int space = row2-col2;
+        
+        while(space){
+            cout << " ";
+            space--;
+        }
+        
+        while(col2 <= ( n-row2+1)) {
+            //cout << (n-col2+1);
+            cout << n-row2+1;
+            col2++;
+        } 
+        
+        cout << endl;
+        row2 = row2+1;
+    }
+    
+    return 0;
+}
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int n;
+    cout << "Enter a number" << endl;
+    cin >> n;
+    cout << endl;
+    
+    int row = 1;
+    while(row <= n) {
+        int col = 1;
+        int space = row-col;
+      
+        while(col <= ( n-row+1)) {
+            //cout << row+col-1;
+            cout << col;
+            col++;
+        } 
+    
+        while(space){
+            cout << " ";
+            space--;
+        }
+        
+        cout << endl;
+        row = row+1;
+    }
+    
+    int row2 = 1;
+    while(row2 <= n) {
+        int col2 = 1;
+        int space = row2-col2;
+        
+        while(space){
+            cout << " ";
+            space--;
+        }
+        
+        while(col2 <= ( n-row2+1)) {
+            cout << n-row2-col2+2;
+            col2++;
+        } 
+        
+        cout << endl;
+        row2 = row2+1;
+    }
+    
+    return 0;
+}
+
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int n;
+    cout << "Enter a number" << endl;
+    cin >> n;
+    cout << endl;
+    
+    int row = 1;
+    while(row <= n) {
+        int col = 1;
+        int space = row-col;
+      
+        while(col <= ( n-row+1)) {
+            //cout << row+col-1;
+            cout << col;
+            col++;
+        } 
+    
+        while(space){
+            cout << "*";
+            space--;
+        }
+        
+        cout << endl;
+        row = row+1;
+    }
+    
+    int row2 = 1;
+    while(row2 <= n) {
+        int col2 = 1;
+        int space = row2-col2;
+        
+        while(space){
+            cout << " ";
+            space--;
+        }
+        
+        while(col2 <= ( n-row2+1)) {
+            cout << n-row2-col2+2;
+            col2++;
+        } 
+        
+        cout << endl;
+        row2 = row2+1;
+    }
+    
+    return 0;
+}
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int n;
+    cout << "Enter a number" << endl;
+    cin >> n;
+    cout << endl;
+    
+    int row = 1;
+    while(row <= n) {
+        int col = 1;
+        int space = row-col;
+      
+        while(col <= ( n-row+1)) {
+            //cout << row+col-1;
+            cout << col;
+            col++;
+        } 
+    
+        while(space){
+            cout << "*";
+            space--;
+        }
+        
+        int col2 = 1;
+        int space2 = row-col2;
+        
+        while(space2){
+            cout << "*";
+            space2--;
+        }
+        
+        while(col2 <= (n-row+1)) {
+            cout << n-row-col2+2;
+            col2++;
+        } 
+        
+        cout << endl;
+        row = row+1;
+    }
+    
+    // int row2 = 1;
+    // while(row2 <= n) {
+    //     int col2 = 1;
+    //     int space = row2-col2;
+        
+    //     while(space){
+    //         cout << " ";
+    //         space--;
+    //     }
+        
+    //     while(col2 <= ( n-row2+1)) {
+    //         cout << n-row2-col2+2;
+    //         col2++;
+    //     } 
+        
+    //     cout << endl;
+    //     row2 = row2+1;
+    // }
+    
+    return 0;
+}

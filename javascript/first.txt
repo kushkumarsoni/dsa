@@ -1,0 +1,102 @@
+// const stringData = "My name is kush kumar soni";
+// const vowels = ['a','e','i','o','u'];
+
+// function check(data) {
+//     let count = 0;
+//     data.toLowerCase().split('').forEach((ch)=>{
+//         vowels.includes(ch) && count++
+//     });
+//     return count;
+// }
+
+// console.log(check(stringData));
+
+// const Person = () => {
+//     this.name = 'Kuchh';
+//     return this;
+// }
+
+function Person () {
+    this.name = 'Yogesh Kumar Chauhan';
+    return this;
+}
+
+const persion = new Person();
+console.log(persion.name);
+
+
+// const foodData = {
+//     Burger:200,
+//     Pizza:500,
+//     Sandwitch:400,
+//     Juice:300
+// };
+
+// function getPrice(item){
+//     return foodData[item];
+// }
+
+// console.log(getPrice('Sandwitch'));
+
+
+//check permission
+// const userPermission = ['create','view','add','edit','update','delete'];
+
+// function createPost(postData) {
+//     if(!userPermission.includes('create')){
+//         return 403;
+//     }else{
+//         return 200
+//     }
+// }
+
+// console.log(createPost({}));
+
+// const user = {
+//     login(){
+//         console.log('Login by email');
+//     }
+// }
+
+// const userLogin = user.login;
+// userLogin();
+
+
+// function isElegible(age) {
+//     //return (age >= 18 ) ? true : false;
+//     return age >= 18;
+// }
+
+// console.log(isElegible(17));
+
+
+// const winners = ['kush','anu','kush','deepak'];
+// const winnerSet = new Set(winners);
+// const final = [...winnerSet];
+// console.log(final);
+// console.log(winners);
+
+function canAccess(userRole) {
+    const roles = ['super admin','admin','editor','user'];
+    return roles.includes(userRole);
+}
+
+console.log(canAccess('admin'));
+
+
+function sum(a,b) {
+    "use strict";
+    a = 200;
+    b=30;
+    return a+b;
+}
+
+console.log(sum(10,10))
+
+let a=40;
+let b=30;
+//[a,b] = [b,a]
+const temp = a;
+a = b;
+b=temp;
+console.log('a :',a);
